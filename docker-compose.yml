@@ -1,0 +1,32 @@
+version: '3'
+services:
+  api:
+    build: 
+      context: ./helpdesk-api
+      dockerfile: Dockerfile
+    command: npm start
+    ports:
+      - '3333:3333' # Substitua por suas portas, se necessário
+    volumes:
+      - saudecheck_db_data:/usr/app/db/data
+    networks:
+      - smsNetwork
+    restart: unless-stopped
+  frontend:
+    build: 
+      context: ./helpdesk-front
+      dockerfile: Dockerfile
+    command: npm start
+    ports:
+      - '3334:3334' # Substitua por suas portas, se necessário
+    restart: unless-stopped
+    depends_on:
+      - api
+    networks:
+      - smsNetwork
+
+networks:
+  smsNetwork:
+
+volumes:
+  saudecheck_db_data:
