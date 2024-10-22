@@ -1,0 +1,76 @@
+export const ChecklistDefault = {
+  data: new Date().toISOString(),
+  acolhimento_disponivel: false,
+  atendimento_medico_disponivel: false,
+  atendimento_odontologico_disponivel: false,
+  carro_visita_disponivel: false,
+  coleta_laboratorio_disponivel: false,
+  curativo_especial_disponivel: false,
+  curativo_simples_disponivel: false,
+
+  farmacia_disponivel: false,
+  instabilidade_informacao_disponivel: false,
+  marcacao_externa_disponivel: false,
+  marcacao_interna_disponivel: false,
+  motivo_acolhimiento: "",
+  motivo_atendimento_medico: "",
+  motivo_atendimento_odontologico: "",
+  motivo_carro_visita: "",
+  motivo_coleta_laboratorio: "",
+  motivo_curativo_especial: "",
+  motivo_curativo_simples: "",
+  motivo_farmacia: "",
+  motivo_instabilidade_informacao: "",
+  motivo_marcacao_externa: "",
+  motivo_marcacao_interna: "",
+  motivo_procedimento: "",
+  motivo_sala_esterilizacao: "",
+  motivo_sala_laboratorio: "",
+  motivo_vacina: "",
+  motivo_visita_domiciliar: "",
+  procedimento_disponivel: false,
+
+  sala_esterilizacao_disponivel: false,
+  sala_Laboratorio_disponivel: false,
+  vacina_disponivel: false,
+  visita_domiciliar_disponivel: false,
+
+  alvara_sanitario: false,
+  data_alvara_sanitario: "",
+
+  relotacao_profissional_disponivel: false,
+  nome_profissional_relotacao: "",
+  data_relotacao: "",
+
+  afastamento_profissional_disponivel: false,
+  nome_profissional_afastamento: "",
+  data_afastamento_profissional: "",
+
+  apresentacao_profissional_disponivel: false,
+  nome_profissional_apresentacao: "",
+  data_apresentacao_profissional: "",
+
+  desligamento_profissional_disponivel: false,
+  nome_profissional_desligamento: "",
+  data_desligamento_profissional: "",
+
+  acionamento_samu_disponivel: false,
+  motivo_acionamento_samu: "",
+  data_acionamento_samu: "",
+
+  ausencia_insumo_disponivel: false,
+  motivo_ausencia_insumo: "",
+  data_ausencia_insumo: "",
+
+  incidentes_criticos_disponivel: false,
+  motivo_incidentes_criticos: "",
+  data_incidentes_criticos: "",
+
+  intercorrencia_estrutural_disponivel: false,
+  motivo_intercorrencia_estrutural: "",
+  data_intercorrencia_estrutural: "",
+
+  intercorrencia_sala_odontologia_disponivel: false,
+  motivo_intercorrencia_sala_odontologia_disponivel: "",
+  data_intercorrencia_sala_odontologia_disponivel: "",
+};
